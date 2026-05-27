@@ -7,9 +7,9 @@
 	"module": "src/index.tsx",
 	"scripts": {
 		"dev": "bun --hot src/index.tsx",
-		"css": "postcss app/globals.css -o .framework/dev/globals.css -w",
-		"css:build": "postcss app/globals.css -o .framework/dev/globals.css",
-		"css:ssr": "postcss app/globals.css -o .framework/dev/globals.css",
+		"css": "bun scripts/postcss-safe.ts --watch",
+		"css:build": "bun scripts/postcss-safe.ts",
+		"css:ssr": "bun scripts/postcss-safe.ts",
 		"start": "NODE_ENV=production bun src/index.tsx",
 		"build": "bun run build.ts",
 		"static:build": "bun server/static-render.ts",

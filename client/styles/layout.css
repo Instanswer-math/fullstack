@@ -63,7 +63,7 @@ body {
 
 	height: 100vh;
 	height: 100svh;
-
+      max-width: 100vw;
 	width: 100vw;
 
 	@apply /* Layout */
@@ -81,7 +81,7 @@ body {
 
 	& > #entry {
 		@apply relative flex flex-col justify-start items-center 
-                  min-h-svh w-full max-w-maxwidth gap-[calc(var(--p)*3)]  pt-p  lg:pb-28 mx-auto 
+                  min-h-svh w-full max-w-maxwidth gap-[calc(var(--p)*3)] pt-p mx-auto 
                   overflow-visible;
 	}
 }

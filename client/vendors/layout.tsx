@@ -15,9 +15,7 @@ export default ({ children }: { children: React.ReactNode }) => {
 		<StrictMode>
 			<QueryClientProvider client={queryClient}>
 				{/* <I18nProvider>{children}</I18nProvider> */}
-				<div className="flex flex-col">
-					{children}
-				</div>
+				<div className="flex flex-col size-full">{children}</div>
 			</QueryClientProvider>
 		</StrictMode>
 	);

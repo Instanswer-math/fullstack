@@ -1,10 +1,7 @@
 // main.tsx
 
-
-
 import Layout from '~/layout';
 import { Link, Outlet } from '@tanstack/react-router';
-import GlobalFooter from './island.3';
 
 export const rootId = 'firstPaint';
 
@@ -21,6 +18,5 @@ export default () => (
 		</nav>
 		<Outlet />
 		{/* </MetadataProvider> */}
-		
 	</Layout>
 );

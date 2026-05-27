@@ -9,7 +9,7 @@
             }),
             getParentRoute = () => rootRoute;
 
-      const routes = [{ path: '/', component: lazy(() => import('app/island.3.tsx')) }].map(route => $route({ ...route, getParentRoute })),
+      const routes = [].map(route => $route({ ...route, getParentRoute })),
             routeTree = rootRoute.addChildren(routes);
 
       // @ts-ignore
